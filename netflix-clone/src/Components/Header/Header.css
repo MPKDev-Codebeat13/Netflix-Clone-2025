@@ -1,0 +1,108 @@
+/* ===== Base styles (Mobile first) ===== */
+.Header_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  height: 70px;
+  color: white;
+  transition: background-color 0.4s ease-in-out;
+  padding-top: 10px;
+}
+
+.Header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.Left_side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+.Header_Logo {
+  width: 80px;
+}
+
+.Header_links {
+  display: none; /* Hide on small screens */
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.Header_links li {
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.Header_links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Right_side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ===== Tablets (min-width: 601px) ===== */
+@media (min-width: 601px) {
+  .Header_Logo {
+    width: 90px;
+  }
+
+  .Header_links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .Header_links li {
+    font-size: 18px;
+  }
+}
+
+/* ===== Laptops (min-width: 900px) ===== */
+@media (min-width: 900px) {
+  .Header_wrapper {
+    width: 90%;
+  }
+
+  .Header_Logo {
+    width: 100px;
+  }
+
+  .Header_links li {
+    font-size: 20px;
+  }
+}
+
+/* ===== Desktops (min-width: 1200px) ===== */
+@media (min-width: 1200px) {
+  .Header_wrapper {
+    width: 80%;
+  }
+
+  .Header_Logo {
+    width: 110px;
+  }
+
+  .Header_links {
+    gap: 24px;
+  }
+
+  .Header_links li {
+    font-size: 22px;
+  }
+}

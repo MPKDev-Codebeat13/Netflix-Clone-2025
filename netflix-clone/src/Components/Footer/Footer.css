@@ -1,0 +1,108 @@
+/* ───── Base (phones) ─────────────────────────────── */
+.Footer_outer_container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px;
+  background: #111;
+  color: #aaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.Footer_icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.Footer_data {
+  width: 100%;
+  display: flex;
+  flex-direction: row; /* stack links & copy on mobile */
+  gap: 24px;
+}
+
+.Footer_link {
+  list-style: none;
+  padding: 0;
+}
+
+.Footer_link li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Footer_link li:hover {
+  text-decoration: underline;
+}
+
+.Footer_link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Service {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+
+.Copy_Right {
+  font-size: 0.875rem;
+}
+
+/* ───── Tablets (≥ 700 px) ────────────────────────── */
+@media (min-width: 700px) {
+  .Footer_outer_container {
+    width: 100%;
+    padding: 40px 56px; /* a little wider */
+    text-align: left;
+  }
+  .Footer_data {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Footer_link li {
+    font-size: 1.1rem;
+  }
+}
+
+/* ───── Laptops (≥ 1024 px) ───────────────────────── */
+@media (min-width: 1024px) {
+  .Footer_outer_container {
+    width: 100%;
+    padding: 48px 72px; /* wider still */
+  }
+  .Footer_link li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .Service {
+    gap: 20px;
+  }
+}
+
+/* ───── Desktops (≥ 1440 px) ──────────────────────── */
+@media (min-width: 1440px) {
+  .Footer_outer_container {
+    width: 100%;
+    padding: 64px 96px; /* generous desktop padding */
+    max-width: 90rem; /* ≈ 1440 px cap so lines don’t get too long */
+  }
+  .Footer_icons {
+    gap: 24px;
+  }
+  .Footer_link li {
+    font-size: 1.3rem;
+  }
+  .Copy_Right {
+    font-size: 1.1rem;
+  }
+}
