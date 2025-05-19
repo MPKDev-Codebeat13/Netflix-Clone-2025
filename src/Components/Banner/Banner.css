@@ -1,8 +1,12 @@
 .banner {
   color: white;
-  height: 448px;
-  position: sticky;
-  padding-top: 400px;
+  height: 80vh;
+  position: relative;
+  object-fit: contain;
+  overflow: hidden;
+ margin-top: -10vh;
+ margin-bottom: -80px;
+ z-index: 1;
 }
 
 .banner_contents {
@@ -52,14 +56,16 @@
 }
 
 .banner_fadeBottom {
-  height: 6.4rem;
+  height: 40vh;
   background-image: linear-gradient(
     180deg,
     transparent,
-    rgba(37, 37, 37, 0.61),
+    rgba(37, 37, 37, 0.1)
     #111
   );
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
+  z-index: 1;
 }
