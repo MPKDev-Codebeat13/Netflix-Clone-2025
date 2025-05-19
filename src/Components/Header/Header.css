@@ -7,7 +7,7 @@
   width: 100%;
   top: 0;
   background-color: #111;
-  height: 70vh;
+  height: 70px;
   color: white;
   transition: background-color 0.4s ease-in-out;
   z-index: 100;
@@ -29,7 +29,7 @@
 }
 
 .Header_Logo {
-  width: 10vh;
+  width: 80px;
 }
 
 .Header_links {
